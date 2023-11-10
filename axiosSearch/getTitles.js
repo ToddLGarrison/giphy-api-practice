@@ -51,8 +51,8 @@ async function getTitles() {
             highestFrequency = wordCount[word]
         }
     }
-    console.log(`Highest frequency: ${highestFrequency}`)
-    console.log(`Most common word: ${mostCommonWord}`)
+
+    console.log(`Most common word: '${mostCommonWord}' with a frequency of ${highestFrequency}`)
 
     return mostCommonWord
 }
