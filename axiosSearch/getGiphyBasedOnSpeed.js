@@ -3,7 +3,7 @@ import getOriginalGiphyWidth from "./getOriginalGiphyWidth.js";
 
 async function getGiphyBasedOnSpeed() {
     const gifs = await getGiphyData();
-    const originalWidthData = await getOriginalGiphyWidth();
+    // const originalWidthData = await getOriginalGiphyWidth();
 
     const lowSpeedThreshold = 60
     const mediumSpeedThreshold = 125
