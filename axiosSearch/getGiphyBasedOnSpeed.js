@@ -18,17 +18,14 @@ async function getGiphyBasedOnSpeed() {
     const mediumSpeedCount = gifs.filter((gif) => gif.images.original.frames <= 125).length
     const highSpeedCount = gifs.filter((gif) => gif.images.original.frames <= 200).length
 
-    console.log(
-        'Low Speed Count', lowSpeedCount,
-        'Medium Speed Count', mediumSpeedCount,
-        'High Speed Count', highSpeedCount,   
-    )
-
+    console.log('Low Speed Count:', lowSpeedCount)
+    console.log('Medium Speed Count:', mediumSpeedCount)
+    console.log('High Speed Count:', highSpeedCount)
 
     return {
-        'Low Speed Count': lowSpeedCount,
-        'Medium Speed Count': mediumSpeedCount,
-        'High Speed Count': highSpeedCount,   
+        lowSpeedCount,
+        mediumSpeedCount,
+        highSpeedCount,
     }
 }
 
