@@ -34,11 +34,19 @@ async function getOriginalGiphyWidth () {
     for (const originalWidth in originalWidthCount) {
         if (originalWidthCount[originalWidth] > highestFrequency) {
             mostCommonOriginalWidth = originalWidth
-            highestFrequency = originalWidthCount[width]
+            highestFrequency = originalWidthCount[originalWidth]
         }
     }
+    // console.log('Most common original width:', mostCommonOriginalWidth)
+    // console.log('Highest frequency:', highestFrequency)
 
-    
+    //total sum of all the original widths to find average width Ignoring NaN and Undefined values
+    const totalOriginalWidths = originalWidths.reduce((acc, originalWidth) => {
+        if (!isNaN(originalWidth) && width !== undefined) {
+            return acc + parseInt(width)
+        }
+            return acc
+    }, 0)
 
     return
 }
