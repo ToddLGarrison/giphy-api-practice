@@ -5,12 +5,10 @@ async function originalRecommendedGiphyDisplay () {
     const screenWidth = 1024
     const margin = 10
 
-    const originalGifsPerRow = Math.floor(screenWidth / (averageWidth + margin))
+    const originalGifsPerRow = Math.floor(screenWidth / (averageOriginalWidth + margin))
 
-    console.log('Original Gifs Per Row:', originalGifsPerRow)
+    console.log('Original Width Sized Gifs Per Row:', originalGifsPerRow)
     return originalGifsPerRow
 }
-
-originalRecommendedGiphyDisplay()
 
 export default originalRecommendedGiphyDisplay
