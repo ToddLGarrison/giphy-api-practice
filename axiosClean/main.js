@@ -1,7 +1,8 @@
-import getApiData from "./getApiData.js";
+import fetchAndDisplayTitles from "./fetchAndDisplayTitles.js";
 
 async function main() {
-    getApiData()
+    fetchAndDisplayTitles()
+
 }
 
 main()
