@@ -2,6 +2,7 @@ import getGiphyWidths from "./getGiphyWidths.js";
 import getTitles from "./getTitles.js";
 import recommendedGiphyDisplay from "./recommendedGiphyDisplay.js";
 import originalRecommendedGiphyDisplay from "./originalRecommendedGiphyDisplay.js";
+import getGiphyBasedOnSpeed from "./getGiphyBasedOnSpeed.js";
 
 
 async function main() {
@@ -9,6 +10,7 @@ async function main() {
     getGiphyWidths()
     recommendedGiphyDisplay()
     originalRecommendedGiphyDisplay()
+    getGiphyBasedOnSpeed()
 }
 
 main()
