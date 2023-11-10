@@ -42,11 +42,18 @@ async function getOriginalGiphyWidth () {
 
     //total sum of all the original widths to find average width Ignoring NaN and Undefined values
     const totalOriginalWidths = originalWidths.reduce((acc, originalWidth) => {
-        if (!isNaN(originalWidth) && width !== undefined) {
-            return acc + parseInt(width)
+        if (!isNaN(originalWidth) && originalWidth !== undefined) {
+            return acc + parseInt(originalWidth)
         }
             return acc
     }, 0)
+
+    // console.log('Total original widths:', totalOriginalWidths)
+
+    //find average original width
+    const averageOriginalWidth = totalOriginalWidths / originalWidths.length
+
+    console.log('Average original width:', averageOriginalWidth)
 
     return
 }
