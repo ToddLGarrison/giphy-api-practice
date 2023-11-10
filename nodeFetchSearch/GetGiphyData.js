@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
+import apiKey from '../config/config';
 
-const apiKey = "zG9o2WmVq2q0lySuGOstOjU4LZhmIn8H"
 const apiUrl = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`;
 
 
