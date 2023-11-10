@@ -53,11 +53,13 @@ async function getOriginalGiphyWidth () {
     //find average original width
     const averageOriginalWidth = totalOriginalWidths / originalWidths.length
 
-    console.log('Average original width:', averageOriginalWidth)
+    // console.log('Average original width:', averageOriginalWidth)
 
-    return
+    return {
+        mostCommonOriginalWidth: mostCommonOriginalWidth,
+        averageOriginalWidth: averageOriginalWidth,
+    }
+
 }
-
-getOriginalGiphyWidth()
 
 export default getOriginalGiphyWidth
