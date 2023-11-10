@@ -3,7 +3,7 @@ import getOriginalGiphyWidth from "./getOriginalGiphyWidth.js";
 
 async function getGiphyBasedOnSpeed() {
     const gifs = await getGiphyData();
-    // const originalWidthData = await getOriginalGiphyWidth();
+    const originalWidthData = await getOriginalGiphyWidth();
 
     const lowSpeedThreshold = 60
     const mediumSpeedThreshold = 125
@@ -19,7 +19,7 @@ async function getGiphyBasedOnSpeed() {
     const lowSpeedCount = gifs.filter((gif) => gif.images.original.frames <= 50).length
     const mediumSpeedCount = gifs.filter((gif) => gif.images.original.frames <= 125).length
     const highSpeedCount = gifs.filter((gif) => gif.images.original.frames <= 200).length
-
+    
     console.log('Low Speed Count:', lowSpeedCount)
     console.log('Medium Speed Count:', mediumSpeedCount)
     console.log('High Speed Count:', highSpeedCount)
