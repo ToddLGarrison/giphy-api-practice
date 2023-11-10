@@ -22,6 +22,9 @@ async function getGiphyBasedOnSpeed() {
     console.log('Medium Speed Count:', mediumSpeedCount)
     console.log('High Speed Count:', highSpeedCount)
 
+
+    //average
+
     return {
         lowSpeedCount,
         mediumSpeedCount,
