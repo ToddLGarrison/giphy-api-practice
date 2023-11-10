@@ -6,7 +6,7 @@ async function getApiData(url) {
 
     try {
         const response = await axios.get(apiUrl)
-        console.log(response)
+        // console.log(response)
     } catch (error) {
         console.error(`Error getting API data: ${error}`)
     }
