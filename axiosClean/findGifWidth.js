@@ -1,7 +1,8 @@
 import getApiData from './getApiData.js';
 import findElementFrequency from './findElementFrequency.js';
+import findArrayAverage from './findArrayAverage.js';
 
-async function getGifWidth() {
+async function findGifWidth() {
     const gifs = await getApiData()
 
     const widths = []
@@ -12,12 +13,13 @@ async function getGifWidth() {
     }
 
     const widthCount = findElementFrequency(widths)
-    
 
+    const averageWidth = findArrayAverage(widths)
 
-    return widthCount
+    return {
+        mostCommonWidth: widthCount,
+        averageWidth: averageWidth,
+    }
 }
 
-getGifWidth()
-
-export default getGifWidth;
+export default findGifWidth;
