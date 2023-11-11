@@ -1,4 +1,5 @@
 import getApiData from './getApiData.js';
+import findElementFrequency from './findElementFrequency.js';
 
 async function getGifWidth() {
     const gifs = await getApiData()
@@ -9,7 +10,14 @@ async function getGifWidth() {
             widths.push(image.width)
         }
     }
+
+    const widthCount = findElementFrequency(widths)
     
+
+
+    return widthCount
 }
+
+getGifWidth()
 
 export default getGifWidth;
