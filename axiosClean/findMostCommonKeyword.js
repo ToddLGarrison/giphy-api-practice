@@ -23,6 +23,8 @@ async function findMostCommonKeyword() {
 
     const mostCommonKeyword = findMostCommonElement(keywordCount)
 
+    console.log('Most Common Keyword:', mostCommonKeyword)
+
     return mostCommonKeyword
 }
 

@@ -9,7 +9,7 @@ async function getApiData() {
         // console.log(response)
         return response.data.data
     } catch (error) {
-        console.error(`Error getting API data: ${error}`)
+        console.error(`Error getting API data: ${error.message}`)
     }
 }
 
