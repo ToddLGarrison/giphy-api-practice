@@ -7,9 +7,9 @@ async function main() {
     const mostCommonKeyword = await findMostCommonKeyword()
     const gifWidth = await findGifWidth()
 
-    console.log(titles)
-    console.log(mostCommonKeyword)
-    console.log(gifWidth)
+    console.log('Trending titles:', titles)
+    console.log(`The most frequent keyword is ${mostCommonKeyword.mostCommonElement} with a count of ${mostCommonKeyword.highestFrequency}`)
+    console.log(`The average gif width is: ${gifWidth.averageWidth}`)
 }
 
 main()

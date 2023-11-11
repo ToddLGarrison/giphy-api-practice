@@ -14,7 +14,7 @@ async function findGifWidth() {
     const averageWidth = findArrayAverage(widths)
 
     return {
-        averageWidth: averageWidth
+        averageWidth
     }
 }
 
