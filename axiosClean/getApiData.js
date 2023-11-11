@@ -1,7 +1,7 @@
 import axios from 'axios'
 import apiKey from '../config/config.js'
 
-async function getApiData(url) {
+async function getApiData() {
     const apiUrl = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}&limit=10`;
 
     try {
