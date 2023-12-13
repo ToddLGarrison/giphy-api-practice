@@ -5,7 +5,7 @@ const searchGiphy = async (query, apiKey) => {
     const apiURL = 'https://api.giphy.com/v1/gifs/search';
     const params = {
         q: query,
-        apiKey: apiKey,
+        api_key: apiKey,
         limit: 15,
     }
 
@@ -20,3 +20,11 @@ const searchGiphy = async (query, apiKey) => {
     }
 }
 
+const query = 'dog'
+
+try {
+    const titles = await searchGiphy(query, apiKey)
+    console.log('Giphy Titles:', titles)
+} catch (error) {
+    console.error(`An error has occurred:`, error)
+}
