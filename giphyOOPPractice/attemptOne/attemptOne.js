@@ -1,5 +1,5 @@
 import axios from 'axios';
-import apiKey from '../config/config.js';
+import apiKey from '../../config/config.js';
 
 
 function searchGiphy(query, apiKey) {
