@@ -22,9 +22,6 @@ const searchGiphy = async (query, apiKey) => {
 
 const query = 'dog'
 
-try {
-    const titles = await searchGiphy(query, apiKey)
-    console.log('Giphy Titles:', titles)
-} catch (error) {
-    console.error(`An error has occurred:`, error)
-}
+
+const titles = await searchGiphy(query, apiKey)
+console.log('Giphy Titles:', titles)

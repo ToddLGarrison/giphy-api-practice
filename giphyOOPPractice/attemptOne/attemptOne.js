@@ -14,7 +14,9 @@ function searchGiphy(query, apiKey) {
     // Make the API request using Axios
     return axios.get(apiUrl, { params })
     .then((response) => {
+        // console.log(response.data)
         const gifs = response.data.data;
+        // console.log(gifs);
         const titles = gifs.map((gif) => gif.title);
         return titles; // Return an array of titles
     })
